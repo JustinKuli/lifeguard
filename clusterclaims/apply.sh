@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "setting user jkulikau defaults for project acm-grc-security"
+export CLUSTERPOOL_TARGET_NAMESPACE="acm-grc-security"
+export CLUSTERCLAIM_GROUP_NAME="policy-grc"
+
 # Error function for printing error messages to stderr
 errorf() {
     printf >&2 "$@"

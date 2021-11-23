@@ -1,5 +1,14 @@
 #!/bin/bash
 
+echo "setting user jkulikau defaults for project acm-grc-security"
+export CLUSTERPOOL_TARGET_NAMESPACE="acm-grc-security"
+export PLATFORM="AWS"
+export CLOUD_CREDENTIAL_SECRET="policy-grc-aws-creds"
+export OCP_PULL_SECRET="policy-grc-ocp-pull-secret"
+export CLUSTERPOOL_AWS_REGION="us-east-1"
+export CLUSTERPOOL_AWS_BASE_DOMAIN="dev08.red-chesterfield.com"
+export MANAGEDCLUSTERSET_NAME="acm-grc-security"
+
 # Error function for printing error messages to stderr
 errorf() {
     printf >&2 "$@"
